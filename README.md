@@ -2,7 +2,7 @@
 Home Page                 |  Photos Page
 :-------------------------:|:-------------------------:
 ![](./homePage.png)  |  ![](./photosPage.png)
-
+ 
 # EN - Personal Portfolio
 
 This project is a personal portfolio website. It is developed using React and Tailwind CSS, allowing the user to showcase their projects and photos.
