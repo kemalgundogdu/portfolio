@@ -1,6 +1,7 @@
 # Photos
-![Home Page Screenshot](./homePage.png)
-![Photos Page Screenshot](./photosPage.png)
+Home Page                 |  Photos Page
+:-------------------------:|:-------------------------:
+![](./homePage.png)  |  ![](./photosPage.png)
 
 # EN - Personal Portfolio
 
