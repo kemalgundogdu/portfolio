@@ -1,3 +1,7 @@
+# Photos
+![Home Page Screenshot](./homePage.png)
+![Photos Page Screenshot](./photosPage.png)
+
 # EN - Personal Portfolio
 
 This project is a personal portfolio website. It is developed using React and Tailwind CSS, allowing the user to showcase their projects and photos.
