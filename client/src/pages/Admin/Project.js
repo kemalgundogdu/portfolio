@@ -1,6 +1,20 @@
 import React from "react";
+import axios from "axios";
 
 function Project({ project, openModal }) {
+  const deleteProject = async (id) => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.delete("http://localhost:3001/projects/delete/" + id, {
+        headers: {
+          Authorization: token,
+        },
+      });
+    } catch (error) {
+      console.error("Hata:", error.response?.data?.message);
+    }
+  };
+
   return (
     <div className="mt-5">
       <h4 className="font-medium text-gray-700 dark:text-gray-300">
@@ -35,12 +49,18 @@ function Project({ project, openModal }) {
             </a>
           )}
         </div>
-        <div>
+        <div className="flex gap-1">
           <button
             onClick={() => openModal(project)}
-            className="text-sm px-3 py-1 rounded bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-800 transition-colors"
+            className="text-sm px-3 py-1 rounded bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-800 transition-colors outline-none"
           >
             Düzenle
+          </button>
+          <button
+            onClick={() => deleteProject(project._id)}
+            className="text-sm px-3 py-1 rounded bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-800 transition-colors outline-none"
+          >
+            Sil
           </button>
         </div>
       </div>
