@@ -38,6 +38,7 @@ To run the project locally, follow these steps:
     ```plaintext
     REACT_APP_UNSPLASH_ACCESS_KEY=your_access_key
     REACT_APP_UNSPLASH_USERNAME=your_username
+    REACT_APP_API_URL=api_url
     ```
 
 5. Start the project:
@@ -97,6 +98,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     ```plaintext
     REACT_APP_UNSPLASH_ACCESS_KEY=your_access_key
     REACT_APP_UNSPLASH_USERNAME=your_username
+    REACT_APP_API_URL=api_url
     ```
 
 5. Projeyi başlatın:
