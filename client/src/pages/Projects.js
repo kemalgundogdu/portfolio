@@ -8,10 +8,16 @@ function Projects() {
   useEffect(() => {
     document.title = "Projeler | Kemal Gündoğdu";
 
-    axios.get(`${process.env.REACT_APP_API_URL}/projects/list`).then((response) => {
-      setProjects(response.data);
-    });
-  }, [projects]);
+    axios.get(`${process.env.REACT_APP_API_URL}projects/list`)
+      .then((response) => {
+        setProjects(response.data);
+      })
+      .catch((error) => {
+        console.error("API isteği sırasında hata:", error.message);
+      });
+  }, []);
+
+  
 
   return (
     <div className="min-h-screen max-w-2xl mx-auto font-inter">
