@@ -8,7 +8,8 @@ function Projects() {
   useEffect(() => {
     document.title = "Projeler | Kemal Gündoğdu";
 
-    axios.get(`${process.env.REACT_APP_API_URL}projects/list`)
+    axios
+      .get(`${process.env.REACT_APP_API_URL}projects/list`)
       .then((response) => {
         setProjects(response.data);
       })
@@ -16,8 +17,6 @@ function Projects() {
         console.error("API isteği sırasında hata:", error.message);
       });
   }, []);
-
-  
 
   return (
     <div className="min-h-screen max-w-2xl mx-auto font-inter">
@@ -40,7 +39,7 @@ function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm px-3 py-1 bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-700 rounded transition-colors"
+                  className="text-sm px-3 py-1 bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-800 rounded transition-colors"
                 >
                   GitHub
                 </a>
@@ -50,7 +49,7 @@ function Projects() {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm px-3 py-1 bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-700 rounded transition-colors"
+                  className="text-sm px-3 py-1 bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-800 rounded transition-colors"
                 >
                   Demo
                 </a>
