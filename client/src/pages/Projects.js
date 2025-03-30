@@ -8,7 +8,7 @@ function Projects() {
   useEffect(() => {
     document.title = "Projeler | Kemal Gündoğdu";
 
-    axios.get("http://localhost:3001/projects/list").then((response) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/projects/list`).then((response) => {
       setProjects(response.data);
     });
   }, [projects]);
