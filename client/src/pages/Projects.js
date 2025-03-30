@@ -40,7 +40,7 @@ function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm px-3 py-1 bg-gray-200 text-gray-700 rounded hover:bg-gray-800 hover:text-gray-200 transition-colors"
+                  className="text-sm px-3 py-1 bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-700 rounded transition-colors"
                 >
                   GitHub
                 </a>
@@ -50,7 +50,7 @@ function Projects() {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm px-3 py-1 bg-gray-200 text-gray-700 rounded hover:bg-gray-800 hover:text-gray-200 transition-colors"
+                  className="text-sm px-3 py-1 bg-gray-800 text-gray-200 hover:bg-gray-200 hover:text-gray-700 rounded transition-colors"
                 >
                   Demo
                 </a>
