@@ -14,7 +14,7 @@ function PersonCard() {
         Kemal Gündoğdu
       </h1>
       <h2 className="text-base text-gray-500 dark:text-gray-300">
-        Full Stack Developer
+        Backend Developer
       </h2>
       <p className="text-gray-600 dark:text-gray-400 text-md mt-5">
         Aklıma gelen her fikri hayata geçirmek için kodlama ile tasarım
