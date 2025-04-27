@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router";
-
+// me image
+import me from "../../images/me.jpeg";
+ 
 function Navbar() {
   return (
     <nav className="fixed w-full top-0 mt-6 z-50">
@@ -11,7 +13,7 @@ function Navbar() {
             className="font-medium hover:text-black/70 transition-colors"
           >
             <img
-              src="https://pbs.twimg.com/profile_images/1892224113348919296/QSNgyk2G_400x400.jpg"
+              src={me}
               alt="kemal gundogdu"
               className="w-10 h-10 rounded-full bg-[#E2E2E2]"
             />
